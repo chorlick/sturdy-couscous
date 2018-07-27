@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="xmlSchemaSelectButton">
+            <property name="text">
+             <string>XML Schema</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="xmlInputSelectButton">
+            <property name="text">
+             <string>XML Input</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="xmlSchemaLineEdit">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="xmlInputLineEdit">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="validationOutputArea">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="fileQuitAction"/>
+   </widget>
+   <widget class="QMenu" name="menuValidation">
+    <property name="title">
+     <string>Validation</string>
+    </property>
+    <addaction name="validationValidateAction"/>
+    <addaction name="validationValidateClearAction"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuValidation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="fileQuitAction">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="validationValidateAction">
+   <property name="text">
+    <string>Validate Document</string>
+   </property>
+  </action>
+  <action name="validationValidateClearAction">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

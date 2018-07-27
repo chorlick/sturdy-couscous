@@ -1,0 +1,3 @@
+<string>:15:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: name line 11 and item
+<string>:22:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag billTo line 10
+<string>:22:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag purchaseOrder line 2
