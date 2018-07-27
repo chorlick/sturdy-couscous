@@ -61,7 +61,7 @@ class Validator(QtGui.QMainWindow, validator.Ui_MainWindow):
         except etree.XMLSyntaxError as err:
             self.validationOutputArea.moveCursor(QtGui.QTextCursor.End, QtGui.QTextCursor.MoveAnchor)
             self.validationOutputArea.insertPlainText('XML Syntax Error\n')
-            self.validationOutputArea.insertPlainText(err.error_log)
+            self.validationOutputArea.insertPlainText(str(err.error_log))
             return
 
         except Exception as e:
